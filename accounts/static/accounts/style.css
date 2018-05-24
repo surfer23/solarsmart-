@@ -1,0 +1,42 @@
+body{
+}
+.bg-company-red {
+    background-color: #c11313;
+    border-bottom: 1px solid black;
+    margin-top: 2%;
+    text-align: center;
+}
+.navbar-nav.ml-auto.topnav li a{
+  color: white;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  background-color: white;
+  border-bottom: 3px solid red;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid red;
+}
