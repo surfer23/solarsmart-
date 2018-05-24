@@ -8,10 +8,9 @@ https://docs.djangoproject.com/en/2.0/howto/deployment/wsgi/
 """
 
 import os
-import sys
 
-sys.path.append('/path/to/application')
-os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
+from django.core.wsgi import get_wsgi_application
 
-import django.core.handlers.wsgi
-application = django.core.handlers.wsgi.WSGIHandler()
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "solarsmart.settings")
+
+application = get_wsgi_application()
